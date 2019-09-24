@@ -1,0 +1,15 @@
+@import '../../../assets/styles/variables/colors';
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-size: 9px;
+  overflow: hidden;
+  border-radius: 50%;
+  user-select: none;
+  cursor: default;
+  background-color: $color-danger;
+}

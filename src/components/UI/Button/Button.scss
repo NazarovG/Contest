@@ -1,0 +1,99 @@
+@import '../../../assets/styles/variables/colors';
+
+.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  user-select: none;
+  outline: none !important;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  transition: all 0.1s ease;
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+  &::-moz-focus-outer,
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.btn-primary {
+  min-width: 64px;
+  min-height: 32px;
+  background: $color-primary;
+  padding: 0 16px;
+  border: 1px solid #218ad0;
+  border-radius: 2px;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1.3px;
+}
+.btn-primary:hover {
+  background-color: #4bb5ff;
+}
+
+.btn-primary.btn-sm {
+  min-height: 24px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 0 10px;
+}
+.btn-primary.btn-lg {
+  height: 54px;
+  padding: 0 30px;
+  font-size: 14px;
+  letter-spacing: 1.32px;
+}
+.btn-secondary {
+  min-height: 32px;
+  padding: 0 15px;
+  background-color: $color-secondary;
+  border-radius: 3px;
+  font-size: 12px;
+}
+.btn-secondary:hover {
+  background-color: #3a3939;
+}
+.btn-secondary.btn-sm {
+  min-height: 24px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 0 10px;
+}
+.btn-secondary.btn-lg {
+  height: 54px;
+  padding: 0 30px;
+  font-size: 14px;
+  letter-spacing: 1.32px;
+}
+
+.btn:disabled {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.btn .left-icon {
+  margin-right: 7px;
+}
+.btn .right-icon {
+  margin-left: 7px;
+}
+
+.btn-icon {
+  color: rgba($color-text, 0.5);
+}

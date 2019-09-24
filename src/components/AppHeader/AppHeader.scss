@@ -1,0 +1,9 @@
+@import '../../assets/styles/variables/colors';
+
+.app-header {
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  background-color: $color-dark-secondy;
+  border-bottom: 1px solid #2e2e2e;
+}

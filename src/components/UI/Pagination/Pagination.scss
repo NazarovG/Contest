@@ -1,0 +1,77 @@
+@import '../../../assets/styles/variables/colors';
+@import '../../../assets/styles/variables/breakpoints';
+$btn-size: 32px;
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination__nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.pagination__list {
+  display: flex;
+  align-items: center;
+}
+.pagination__btn {
+  width: $btn-size;
+  padding: 0;
+  height: $btn-size;
+  border-radius: 3px;
+  font-size: 11px;
+  letter-spacing: 1.3px;
+}
+.pagination__list {
+  .pagination__btn:hover {
+    background-color: #292929;
+  }
+
+  .pagination__btn.active {
+    background-color: $color-secondary;
+    cursor: default;
+    pointer-events: none;
+    opacity: 1;
+  }
+}
+.pagination__btn:hover {
+  i {
+    color: rgba($color-text, $alpha: 0.8);
+  }
+}
+.pagination__btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+
+.pagination__btn-prev {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  @media (min-width: 350px) {
+    display: flex;
+  }
+  @media (min-width: $small) {
+    position: static;
+    transform: none;
+  }
+}
+.pagination__btn-next {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  @media (min-width: 350px) {
+    display: flex;
+  }
+  @media (min-width: $small) {
+    position: static;
+    transform: none;
+  }
+}

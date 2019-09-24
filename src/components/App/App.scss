@@ -1,0 +1,85 @@
+@import '../../assets/styles/variables/colors';
+@import '../../assets/styles/variables/breakpoints';
+
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  background-color: $color-dark;
+}
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background-color: $color-dark;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $color-text;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif, sans-serif;
+}
+body.scroll-lock {
+  overflow: hidden;
+}
+#root {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (min-width: $small) {
+    padding: 0 35px;
+  }
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+i {
+  display: block;
+}
+.icon {
+  color: #959494;
+}
+svg {
+  display: block;
+  fill: currentColor;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.1s ease;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}

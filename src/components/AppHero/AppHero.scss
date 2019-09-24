@@ -1,0 +1,118 @@
+@import '../../assets/styles/variables/award';
+@import '../../assets/styles/variables/colors';
+@import '../../assets/styles/variables/breakpoints';
+
+.app-hero {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: calc(100vh - 64px);
+  background-color: $color-dark-secondy;
+  background-image: url('../../assets/img/bg-coins.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  @media (min-width: $small) {
+    padding: 45px 0;
+  }
+  @media (min-width: $medium) {
+    padding: 65px 0;
+  }
+}
+.app-hero__title {
+  margin: 15px 0;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  @media (min-width: $medium) {
+    margin: 25px;
+  }
+  @media (min-width: $medium) {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+}
+
+.app-hero__descr {
+  max-width: 680px;
+  margin: 0 auto 16px auto;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: rgba($color-text, $alpha: 0.9);
+
+  @media (min-width: $medium) {
+    font-size: 24px;
+  }
+}
+
+.app-hero__prize {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 80px;
+  }
+
+  .icon {
+    display: none;
+    color: $color-award-default;
+
+    @media (min-width: $small) {
+      display: flex;
+      svg {
+        width: 60px;
+        height: 90px;
+      }
+    }
+    @media (min-width: $medium) {
+      svg {
+        width: 94px;
+        height: 137px;
+      }
+    }
+  }
+}
+.app-hero__prize-value {
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+  color: $color-primary;
+  text-shadow: 0px 4px 0px #165784;
+
+  @media (min-width: $medium) {
+    font-size: 80px;
+  }
+}
+.app-hero__prize-label {
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  @media (min-width: $medium) {
+    letter-spacing: 1.6px;
+    font-size: 18px;
+  }
+}
+
+.app-hero__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .btn {
+    margin-bottom: 35px;
+  }
+  p {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: rgba($color-text, $alpha: 0.5);
+  }
+}

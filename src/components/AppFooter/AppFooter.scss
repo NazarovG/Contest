@@ -1,0 +1,49 @@
+@import '../../assets/styles/variables/_colors';
+
+.app-footer {
+  .container {
+    display: flex;
+    align-items: center;
+    min-height: 68px;
+  }
+}
+.app-footer__logo {
+  margin-right: 14px;
+  a {
+    color: rgba($color-text, 0.2);
+  }
+  a:hover {
+    color: $color-text;
+  }
+}
+.app-footer__version {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba($color-text, 0.15);
+}
+
+.app-footer__dev {
+  a {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba($color-text, 0.15);
+  }
+  .heart {
+    font-size: 15px;
+    color: rgba($color-danger, 0.4);
+    transition: all 0.15s ease;
+  }
+  .address {
+    font-weight: 500;
+    color: rgba($color-text, 0.5);
+    transition: all 0.15s ease;
+  }
+  a:hover {
+    .heart {
+      color: $color-danger;
+    }
+    .address {
+      color: $color-text;
+    }
+  }
+}

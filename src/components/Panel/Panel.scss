@@ -1,0 +1,47 @@
+@import '../../assets/styles/variables/breakpoints';
+
+.panel-header {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 70px;
+  padding: 19px 0;
+}
+.panel-header__left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.panel-title {
+  margin-right: 30px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+
+  @media (min-width: $small) {
+    letter-spacing: 1.4px;
+  }
+}
+.panel-header__filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .form-check {
+    margin-bottom: 15px;
+    margin-right: 25px;
+  }
+}
+.panel-header__searchbar {
+  width: 100%;
+  flex-shrink: 0;
+
+  @media (min-width: $small) {
+    width: 325px;
+  }
+}
+.panel-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  padding-top: 25px;
+}

@@ -1,0 +1,10 @@
+@import '../../../assets/styles/variables/colors';
+
+.logo {
+  text-transform: uppercase;
+  cursor: default;
+  font-size: 14px;
+  span {
+    color: $color-primary;
+  }
+}

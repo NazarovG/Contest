@@ -1,0 +1,50 @@
+@import '../../../assets/styles/variables/colors';
+
+.form-check {
+  user-select: none;
+  flex-shrink: 0;
+  label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.form-check__icon {
+  position: relative;
+  margin-right: 8px;
+  i {
+    position: relative;
+    color: $color-text-gray;
+    display: block;
+  }
+  svg {
+    position: relative;
+    z-index: 1;
+  }
+}
+.form-check__label {
+  line-height: 14px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: rgba($color-text, 0.5);
+}
+.form-check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.form-check.checked {
+  .form-check__icon i {
+    color: $color-primary;
+  }
+}
+
+.form-check.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.5;
+}
