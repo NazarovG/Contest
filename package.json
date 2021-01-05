@@ -15,7 +15,7 @@
     "last 2 versions"
   ],
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "mobx": "^5.13.0",
     "mobx-react": "^6.1.1",
     "normalize.css": "^8.0.1",
